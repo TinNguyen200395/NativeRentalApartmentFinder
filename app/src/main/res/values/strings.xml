@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NativeRentalApartmentFinder</string>
+    <string name="itclass">Add Rental Apartment</string>
+    <string name="downloadteamplate"> Download </string>
+    <string name="addfromExcel"> Add From Excel</string>
+    <string name="propertyname">   Property name</string>
+    <string name="propertyaddress">Property address </string>
+    <string name="propertytype">Property type  </string>
+    <string name="bedrooms">Bedrooms </string>
+    <string name="datetime">Date Time </string>
+    <string name="monthlyrentprice">Monthly rent price  </string>
+    <string name="furnituretypes">Furniture types  </string>
+    <string name="notes">Notes </string>
+    <string name="nameofthereporter">Name of the reporter  </string>
+
+    <string name="pick_date">Date  </string>
+
+    <string name="designby">Design by Tin Nguyen</string>
+    <string name="login">Rental Apartment Finder</string>
+</resources>

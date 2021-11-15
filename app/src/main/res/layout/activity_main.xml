@@ -1,0 +1,281 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0E68C"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/widthimage200"
+                android:layout_height="@dimen/heightimage75"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/textsizeimg"
+                android:src="@drawable/img"
+                android:textSize="@dimen/textsizeimg"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/margintopimage"
+                android:text="@string/itclass"
+                android:textColor="#FF8C00"
+                android:textSize="@dimen/fontsize20"
+                android:textStyle="bold"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/propertyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/property"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/propertyname"
+                android:padding="@dimen/margin10"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/propertyaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/propertyaddress"
+                android:padding="@dimen/margin10"
+                android:inputType="textPersonName"
+
+                />
+
+
+            <EditText
+                android:id="@+id/propertytype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/edit"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/propertytype"
+                android:padding="@dimen/margin10" />
+
+            <EditText
+                android:id="@+id/bedrooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/bedroom1"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/bedrooms"
+                android:padding="@dimen/margin10" />
+
+            <EditText
+                android:id="@+id/datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/datetime"
+                android:padding="@dimen/margin10"
+                android:inputType="datetime"
+
+                />
+
+
+            <EditText
+                android:id="@+id/monthlyrentprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/money1"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/monthlyrentprice"
+                android:padding="@dimen/margin10"
+                android:inputType="number"
+
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/selecttye"
+
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="#e6e7e9"
+                    android:padding="@dimen/margin10"
+                    android:text="Choose Furniture types: "
+                    android:textSize="@dimen/fontsize15"
+
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/furnished"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="#e6e7e9"
+                    android:checked="true"
+                    android:padding="@dimen/margin10"
+                    android:text="Furnished" />
+
+                <RadioButton
+                    android:id="@+id/unfurnished"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="#e6e7e9"
+                    android:padding="@dimen/margin10"
+                    android:text="Unfurnished" />
+
+                <RadioButton
+                    android:id="@+id/partfurnished"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="#e6e7e9"
+                    android:padding="@dimen/margin10"
+                    android:text="Part Furnished" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:onClick="apply"
+                android:padding="@dimen/margin10"
+                android:text="Apply">
+
+            </Button>
+
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/comment"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/notes"
+                android:padding="@dimen/margin10"
+                android:inputType="text"
+
+                />
+
+            <EditText
+                android:id="@+id/nameofthereporter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e6e7e9"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="@dimen/margin20"
+                android:hint="@string/nameofthereporter"
+                android:padding="@dimen/margin10"
+                android:inputType="textPersonName"
+
+                />
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="#e8bf31"
+                android:paddingTop="@dimen/margin20"
+                android:paddingBottom="@dimen/margin20"
+                android:text="Add Apartment"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="@dimen/fontsize20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginTop40"
+                android:text="@string/login"
+                android:textColor="#FF8C00"
+                android:textSize="@dimen/fontsize20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/designby" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
